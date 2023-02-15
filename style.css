@@ -1,0 +1,207 @@
+body {
+  /* display:flex; */
+  /* align-items: center;
+  justify-content: center; */
+  height: 100vh;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background: url("https://source.unsplash.com/random") no-repeat center
+    center/cover;
+  font-size: 100%;
+}
+
+.card {
+  background: #111c33d0;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  border-radius: 30px;
+  margin: 1em auto;
+  width: 35em;
+  border: 3px solid rgb(224, 213, 213);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input.searchbar {
+  /* border:2px solid rgb(172, 165, 165); */
+  border: none;
+  outline: none;
+  border-radius: 24px;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  background: #7c7c7c2b;
+  font-family: inherit;
+  color: white;
+  font-size: 90%;
+  width: 95%;
+}
+
+button {
+  border-radius: 50%;
+  outline: none;
+  padding: 5px;
+  margin: 0.5em;
+  height: 46px;
+  background: #7c7c7c2b;
+  /* border:2px solid white; */
+  width: 2.5em;
+  height: 2.5em;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  justify-content: left;
+  cursor: pointer;
+  position: sticky;
+  top: 0px;
+}
+
+.forecast {
+  display: flex;
+  align-items: center;
+  justify-content:left;
+  position: relative;
+  /* padding: 25px; */
+  bottom: 0;
+  width: 100%;
+  font-size:15px;
+  /* margin:auto; */
+}
+
+.forecast .today{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.forecast .today .day{
+    border:none;
+    outline:none;
+    border-radius:20px;
+    text-align:center;
+    padding:5px 15px;
+}
+
+.forecast .mood{
+  font-size:14px;
+  padding-top:10px;
+}
+
+.forecast .weather-forecast-item{
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 5px;
+  border:2px solid white;
+  border-radius:11px;
+  margin:5px 5px auto;
+  padding:5px;
+  background:rgba(0, 0, 0, 0.4);
+}
+
+.weather-forecast-item .day{
+  border:none;
+  outline:none;
+  text-align:center;
+  padding:10px 10px;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-list {
+  width: 40%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  top: 0px;
+  position: fixed;
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 23px 30px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  margin: 0 auto;
+  top: -12px;
+  padding: 0px;
+}
+
+.w-icon{
+  width: 60px;
+  height: 60px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0px;
+  margin-top:8px;
+}
+
+
+.nav-list li {
+  text-decoration: none;
+  color: #a0a0a0;
+  position: relative;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: #a0a0a0;
+  position: relative;
+}
+
+.nav-list li a::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  background-color: #ff3c78;
+  bottom: -6px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform;
+}
+
+.nav-list li a:hover {
+  color: white;
+}
+
+.nav-list li a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.background {
+  background: rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  background-blend-mode: darken;
+  margin: 0px;
+  height: 15%;
+}
+
+button:hover {
+  background: #7c7c7b;
+  border: 2px solid rgb(156, 150, 150);
+}
+
+
